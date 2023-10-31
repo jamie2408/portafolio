@@ -149,6 +149,7 @@
                 class="text-black mx-auto"
                 align="center"
                 justify="center"
+                href="https://github.com/jamie2408/portafolio"
               >
                 Ir al código</v-btn
               >
@@ -183,6 +184,7 @@
                 class="text-black mx-auto"
                 align="center"
                 justify="center"
+                href="https://github.com/jamie2408/EventUA-dev"
               >
                 Ir al código</v-btn
               >
