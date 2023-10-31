@@ -65,6 +65,8 @@
           <v-row>
             <v-col cols="auto">
               <v-btn
+                href="cv_jamie.pdf"
+                download="cv_jamie.pdf"
                 block
                 rounded="lg"
                 class="px-16 mb-2"
