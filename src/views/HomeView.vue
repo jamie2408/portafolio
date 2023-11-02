@@ -42,7 +42,7 @@
         align="center"
         justify="center"
         id="sobremi"
-        v-motion-roll-visible-top
+        v-motion-pop-visible
       >
         <v-col align-self="center" cols="12" md="6">
           <div>
@@ -80,7 +80,13 @@
       <v-divider></v-divider>
 
       <h2 id="exp" class="titulos mb-6">Experiencia y Estudios</h2>
-      <v-row cols="12" style="height: 80vh" align="center" justify="center">
+      <v-row
+        v-motion-pop-visible
+        cols="12"
+        style="height: 80vh"
+        align="center"
+        justify="center"
+      >
         <v-col align-self="center" cols="8" sm="3" class="mx-16 mb-4">
           <h3 class="text-decoration-underline">Estudios</h3>
           <br />
@@ -110,7 +116,13 @@
           </p>
         </v-col>
       </v-row>
-      <v-row cols="12" class="my-10" align="center" justify="center">
+      <v-row
+        v-motion-pop-visible
+        cols="12"
+        class="my-10"
+        align="center"
+        justify="center"
+      >
         <h3 class="text-decoration-underline mt-2">Habilidades técnicas</h3>
       </v-row>
       <v-row cols="12" class="mb-8 mx-20" align="center" justify="center">
@@ -188,7 +200,7 @@
 
       <h2 class="titulos mb-4">Proyectos</h2>
       <v-row
-        v-motion-roll-visible-bottom
+        v-motion-pop-visible
         cols="12"
         id="proyectos"
         style="height: 100vh"
@@ -362,9 +374,6 @@
 <script>
 import { defineComponent } from "vue";
 import NavBar from "../components/NavBar.vue";
-
-// Components
-//import HelloWorld from '../components/HelloWorld.vue';
 
 export default defineComponent({
   name: "HomeView",
