@@ -10,7 +10,7 @@
 
           <v-row style="height: 100vh" id="inicio">
             <v-col align-self="center" cols="12" sm="6">
-              <div class="ml-5">
+              <div class="mx-5">
                 <h1 class="nombre">Jamie Herrera Suárez</h1>
                 <span class="oficio">Programador Front-end</span><br />
               </div>
@@ -38,10 +38,10 @@
       <v-row
         cols="12"
         class="mt-16"
-        id="sobremi"
         style="height: 100vh"
         align="center"
         justify="center"
+        id="sobremi"
         v-motion-roll-visible-top
       >
         <v-col align-self="center" cols="12" md="6">
@@ -69,7 +69,7 @@
                 download="cv_jamie.pdf"
                 block
                 rounded="lg"
-                class="px-16 mb-2"
+                class="px-16 mb-4"
                 color="indigo-darken-1"
                 >Descargar CV</v-btn
               >
@@ -79,15 +79,8 @@
       </v-row>
       <v-divider></v-divider>
 
-      <h2 class="titulos">Experiencia y Estudios</h2>
-      <v-row
-        cols="12"
-        id="exp"
-        v-motion-pop-visible
-        style="height: 100vh"
-        align="center"
-        justify="center"
-      >
+      <h2 id="exp" class="titulos mb-6">Experiencia y Estudios</h2>
+      <v-row cols="12" style="height: 80vh" align="center" justify="center">
         <v-col align-self="center" cols="8" sm="3" class="mx-16 mb-4">
           <h3 class="text-decoration-underline">Estudios</h3>
           <br />
@@ -110,15 +103,90 @@
           <v-img :width="250" src="planeta.png"></v-img>
           <h4 class="">Planeta Huerto (2021-2022)</h4>
           <p class="text-grey">
-            Prácticas curriculares y extracurriculares durante 8 meses. Mi
-            trabajo en la empresa era diseñar las landings en Figma y
-            posteriormente programarlas en Vue.js.
+            Prácticas curriculares y extracurriculares como diseñador UX/UI y
+            como programador frontend. Mi trabajo en la empresa era diseñar las
+            landing pages en Figma, que posteriormente programaba con el
+            framework Vue.js. 8 meses de duración
           </p>
+        </v-col>
+      </v-row>
+      <v-row cols="12" class="my-10" align="center" justify="center">
+        <h3 class="text-decoration-underline mt-2">Habilidades técnicas</h3>
+      </v-row>
+      <v-row cols="12" class="mb-8 mx-20" align="center" justify="center">
+        <v-col align-self="center" cols="3" md="1" class="center mx-4 my-2">
+          <v-btn
+            min-width="100px"
+            prepend-icon="fa-brands fa-html5"
+            stacked
+            color="indigo-darken-1"
+            class="text-white"
+            >HTML</v-btn
+          >
+        </v-col>
+        <v-col justify="center" cols="3" md="1" class="center mx-4 my-2">
+          <v-btn
+            min-width="100px"
+            prepend-icon="fa-brands fa-css3-alt"
+            stacked=""
+            color="indigo-darken-1"
+            class="text-white"
+            >CSS</v-btn
+          >
+        </v-col>
+        <v-col align-self="center" cols="3" md="1" class="center mx-4 my-2">
+          <v-btn
+            min-width="100px"
+            prepend-icon="fa-brands fa-js"
+            stacked=""
+            color="indigo-darken-1"
+            >JS</v-btn
+          >
+        </v-col>
+        <v-col align-self="center" cols="3" md="1" class="center mx-4 my-2">
+          <v-btn
+            min-width="100px"
+            prepend-icon="fa-brands fa-react"
+            stacked=""
+            color="indigo-darken-1"
+            class="text-white"
+            >React</v-btn
+          >
+        </v-col>
+        <v-col align-self="center" cols="3" md="1" class="center mx-4 my-2">
+          <v-btn
+            min-width="100px"
+            prepend-icon="fa-brands fa-vuejs"
+            stacked=""
+            color="indigo-darken-1"
+            class="text-white"
+            >Vue.js</v-btn
+          >
+        </v-col>
+        <v-col align-self="center" cols="3" md="1" class="center mx-4 my-2">
+          <v-btn
+            prepend-icon="fa-brands fa-figma"
+            stacked=""
+            min-width="100px"
+            color="indigo-darken-1"
+            class="text-white"
+            >Figma</v-btn
+          >
+        </v-col>
+        <v-col align-self="center" cols="3" md="1" class="center mx-4 my-2">
+          <v-btn
+            min-width="100px"
+            prepend-icon="fa-brands fa-github"
+            stacked=""
+            color="indigo-darken-1"
+            class="text-white"
+            >Github</v-btn
+          >
         </v-col>
       </v-row>
       <v-divider></v-divider>
 
-      <h2 class="titulos">Proyectos</h2>
+      <h2 class="titulos mb-4">Proyectos</h2>
       <v-row
         v-motion-roll-visible-bottom
         cols="12"
@@ -127,7 +195,7 @@
         align="center"
         justify="center"
       >
-        <v-col align-self="center" cols="8" sm="4" class="mx-16">
+        <v-col align-self="center" cols="8" sm="4" class="mx-16 mb-8">
           <v-card
             class="mx-auto"
             variant="tonal"
@@ -158,7 +226,7 @@
             </v-card-actions>
           </v-card></v-col
         >
-        <v-col align-self="center" cols="8" sm="4" class="mx-16">
+        <v-col align-self="center" cols="8" sm="4" class="mx-16 mb-8">
           <v-card
             class="mx-auto"
             max-width="700"
@@ -180,25 +248,32 @@
             </v-card-item>
 
             <v-card-actions align="center" justify="center">
-              <v-btn
-                prepend-icon="fa-brands fa-github"
-                color="indigo-darken-1"
-                class="text-black mx-auto"
-                align="center"
-                justify="center"
-                href="https://github.com/jamie2408/EventUA-dev"
-              >
-                Ir al código</v-btn
-              >
-              <v-btn
-                prepend-icon="fa-solid fa-terminal"
-                color="indigo-darken-1"
-                class="text-black mx-auto"
-                align="center"
-                justify="center"
-              >
-                Ver web</v-btn
-              >
+              <v-row cols="12" align="center" justify="center">
+                <v-col lign-self="center" cols="12" md="6">
+                  <v-btn
+                    prepend-icon="fa-brands fa-github"
+                    color="indigo-darken-1"
+                    class="text-black mx-auto"
+                    align="center"
+                    justify="center"
+                    href="https://github.com/jamie2408/EventUA-dev"
+                  >
+                    Ir al código</v-btn
+                  >
+                </v-col>
+                <v-col lign-self="center" cols="12" md="6">
+                  <v-btn
+                    prepend-icon="fa-solid fa-terminal"
+                    color="indigo-darken-1"
+                    class="text-black mx-auto"
+                    align="center"
+                    justify="center"
+                    href="https://youtu.be/j4LoBbi6bfs"
+                  >
+                    Ver video demo</v-btn
+                  >
+                </v-col>
+              </v-row>
             </v-card-actions>
           </v-card></v-col
         >
@@ -209,26 +284,26 @@
       <v-row
         cols="12"
         id="contacto"
-        style="height: 85vh"
+        style="height: 70vh"
         align="center"
         justify="center"
         v-motion-pop-visible
       >
-        <v-col align-self="center" cols="12" sm="6">
+        <v-col lign-self="center" cols="12" sm="6">
           <v-row cols="12" align="center" justify="center">
-            <v-col align-self="center" cols="2" sm="2">
+            <v-col class="center" align-self="center" cols="10" md="2">
               <v-btn
                 icon="fa-solid fa-user"
                 color="indigo-darken-1"
                 class="text-white"
               ></v-btn>
             </v-col>
-            <v-col align-self="center" cols="6" sm="6">
-              <p class="text-grey">Jamie Herrera Suárez</p>
+            <v-col class="center" align-self="center" cols="10" md="6">
+              <p class="text-grey ml-2">Jamie Herrera Suárez</p>
             </v-col>
           </v-row>
-          <v-row cols="12" align="center" justify="center">
-            <v-col align-self="center" cols="2" sm="2">
+          <v-row class="center" cols="12" align="center" justify="center">
+            <v-col class="center" align-self="center" cols="10" md="2">
               <v-btn
                 href="mailto:jamieherrerasuarez@gmail.com"
                 icon="fa-solid fa-envelope"
@@ -236,46 +311,46 @@
                 class="text-white"
               ></v-btn>
             </v-col>
-            <v-col align-self="center" cols="6" sm="6">
+            <v-col class="center" cols="10" md="6">
               <p class="text-grey">jamieherrerasuarez@gmail.com</p>
             </v-col>
           </v-row>
-          <v-row cols="12" align="center" justify="center">
-            <v-col align-self="center" cols="2" sm="2">
+          <v-row class="center" cols="12" align="center" justify="center">
+            <v-col class="center" align-self="center" cols="10" md="2">
               <v-btn
-                href="https://github.com/jamie2408?tab=projects"
+                href=" https://www.linkedin.com/in/jamie-herrera-suarez-2298ab21b/s"
                 icon="fa-brands fa-linkedin"
                 color="indigo-darken-1"
                 class="text-white"
               ></v-btn>
             </v-col>
-            <v-col align-self="center" cols="6" sm="6">
+            <v-col class="center" align-self="center" cols="10" md="6">
               <p class="text-grey">Github</p>
             </v-col>
           </v-row>
-          <v-row cols="12" align="center" justify="center">
-            <v-col align-self="center" cols="2" sm="2">
+          <v-row class="center" cols="12" align="center" justify="center">
+            <v-col class="center" align-self="center" cols="10" md="2">
               <v-btn
-                href="https://www.linkedin.com/in/jamie-herrera-suarez-2298ab21b/s"
+                href="https://github.com/jamie2408?tab=projects"
                 icon="fa-brands fa-github"
                 color="indigo-darken-1"
                 class="text-white"
               ></v-btn>
             </v-col>
-            <v-col align-self="center" cols="6" sm="6">
-              <p class="text-grey">Linkedln</p>
+            <v-col class="center" align-self="center" cols="10" md="6">
+              <p class="text-grey center">Linkedln</p>
             </v-col>
           </v-row>
           <v-row cols="12" align="center" justify="center">
-            <v-col align-self="center" cols="2" sm="2">
+            <v-col class="center" align-self="center" cols="10" md="2">
               <v-btn
                 icon="fa-solid fa-phone"
                 color="indigo-darken-1"
-                class="text-white"
+                class="text-white center"
               ></v-btn>
             </v-col>
-            <v-col align-self="center" cols="6" sm="6">
-              <p class="text-grey">605765217</p>
+            <v-col class="center" align-self="center" cols="10" md="6">
+              <p class="text-grey ml-3">605765217</p>
             </v-col>
           </v-row>
         </v-col>
@@ -306,13 +381,15 @@ export default defineComponent({
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
-  width: 100%;
   height: 100vh;
   position: relative;
   display: flex;
+  width: 100vw !important;
+
   align-items: center;
   justify-content: center;
   background: linear-gradient(to bottom, #000 0%, #282369 100%);
@@ -895,10 +972,14 @@ h1 {
 .v-container {
   padding: 0 0 16px 0;
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .head {
   position: relative;
-  min-height: 100vh;
   align-content: center;
   background: black;
   text-align: center;
