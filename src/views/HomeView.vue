@@ -57,7 +57,7 @@
             ¡Hola! Mi nombre es Jamie y soy ingeniero multimedia. Mi curiosidad
             por los ordenadores y la tecnología en general me hizo incursionar
             en el mundo de la informática. En 2018 decidí hacer la carrera de
-            ingenieria multimedia, en donde tras estudiar diversos ramas de la
+            ingeniería multimedia, en donde tras estudiar diversos ramas de la
             programación, encontré que lo que mas me gustaba era la programación
             front-end.
           </p>
@@ -198,11 +198,10 @@
       </v-row>
       <v-divider></v-divider>
 
-      <h2 class="titulos mb-4">Proyectos</h2>
+      <h2 id="proyectos" class="titulos mb-4">Proyectos</h2>
       <v-row
         v-motion-pop-visible
         cols="12"
-        id="proyectos"
         style="height: 100vh"
         align="center"
         justify="center"
@@ -397,7 +396,6 @@ body {
   height: 100vh;
   position: relative;
   display: flex;
-  width: 100vw !important;
 
   align-items: center;
   justify-content: center;
